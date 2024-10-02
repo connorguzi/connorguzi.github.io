@@ -92,11 +92,28 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
   h1 {
     font-size: 2.6rem;
   }
 }
+
+.about__desc{
+  display: flex;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 50px;
+ }
+.text {
+  font-size: 18px;
+  width: 900px;
+}
+ /* img {
+   max-width:100%;
+   max-height:100%;
+   float: right;
+ } */
+ 
 
 /*===================
   buttons and links
@@ -265,7 +282,7 @@ main {
 
 .about__desc {
   font-size: 1rem;
-  max-width: 600px;
+  max-width: 800px;
 }
 
 .about__desc,
