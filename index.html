@@ -10,10 +10,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/ead59e43cf.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Connor Guzikowski</title>
     <style>
@@ -57,12 +58,12 @@
       <!-- About -->
       <div class="about center">
         <h1>Hello! My name's <span class="about__name">Connor Guzikowski.</span></h1>
-        <h2 class="about__role">An Electrical and Computer Engineering Master's student at UC San Diego.</h2>
+        <h2 class="about__role">Electrical and Computer Engineering Master's student at UC San Diego.</h2>
         <div class="about__desc" >
 
           <div class="text" style= "flex: 1; max-width: 1200px; line-height: 1.6;">
             After completing my undergraduate degree in Robotics Engineering at UC Santa Cruz in the Spring of 2024, I have continued my robotics education by 
-            pursuing an ECE master's degree with a concentraion in Intelligent Systems, Robotics, and Controls at UC San Diego. With a long-held passion for
+            pursuing an ECE master's degree with a concentration in Intelligent Systems, Robotics, and Controls at UC San Diego. With a long-held passion for
             robotics, I aim to provide a meaningful impact with my work. My main fields of interest are environmental conservation/exploration, surgical robotics, and robotic aids
             for those with disabilities. I have experience and interest in computer vision, controls, ROS2 development, and machine learning. I currently work at Naval Information Warfare Center (NIWC) in San Diego, where I design and develop
              on quadcopters to perform 3d scene reconstruction and autonomous flight/landing. In my free time you can find me rock climbing, hiking, or playing guitar. 
@@ -105,13 +106,10 @@
           <div class="project">
             <h3>Laser Chaser</h3>
             <p class="project__description">
-An autonomous laser toy for pets that uses real-time computer vision on a Raspberry Pi to detect motion and dynamically steer a servo-mounted laser to evade moving subjects. The system includes an automatic calibration routine that detects the laser in-camera to precisely constrain servo movement within the camera’s 
-field of view, enabling reliable and responsive tracking without manual setup.
-            </p>
+An autonomous laser toy for pets that uses real-time computer vision on a Raspberry Pi to detect motion and dynamically steer a servo-mounted laser to evade moving subjects. A KNN background remover is used in conjunction with a Kalman Filter to accurately detect animal position.
             <ul class="project__stack">
-              <li class="project__stack-item">Reinforcement Learning</li>
-              <li class="project__stack-item">Python</li>
-              <li class="project__stack-item">Robotic Manipulation</li>
+              <li class="project__stack-item">Computer Vision</li>
+              <li class="project__stack-item">Embedded Systems</li>
             </ul>
 
             <a
@@ -123,7 +121,7 @@ field of view, enabling reliable and responsive tracking without manual setup.
               <i aria-hidden="true" class="fab fa-github"></i>
             </a>
             <a
-              href="https://github.com/connorguzi/auto_laser"
+              href="https://youtube.com/shorts/x9un94TZWNg?feature=share"
               aria-label="live preview"
               class="link link--icon"
               target="_blank"
@@ -138,7 +136,7 @@ field of view, enabling reliable and responsive tracking without manual setup.
               UAV’s may be used for automatic surveillance of various locations. This project aimed to implement a naive method for autonomous surveillance. Given a set of waypoints, the UAV goes to the ith waypoint, orbits for t amount of time, move to the i+1 waypoint and repeat. To make the project more interesting, we wanted to have the path between waypoints be a bezier curve.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Simulation</li>
               <li class="project__stack-item">Controls</li>
               <li class="project__stack-item">Path Planning</li>
             </ul>
@@ -162,15 +160,14 @@ field of view, enabling reliable and responsive tracking without manual setup.
           </div>
 
           <div class="project">
-            <h3>Powerglove</h3>
+            <h3>Dinger Bot</h3>
             <p class="project__description">
-              Created a glove equipped with capacitive touch sensors, IR sensors, IMU, and esp32 to control various devices remotely. 
-              The intention of the glove is to demonstrate a device which aids in those with mobility disabilities to more easily interact with their environment.
+              Implemented a robotic baseball hitting system using PyBullet and a policy gradient algorithm to maximize ball travel distance and accuracy. The model learned the optimal swing angle and velocity curve of the swing. When compared to a basic trajectory following algorithm the model saw around 8x improvement in ball travel distance.
             </p>
             <ul class="project__stack">
-              <li class="project__stack-item">C++</li>
-              <li class="project__stack-item">esp32 Development</li>
-              <li class="project__stack-item">Sensor Fusion</li>
+              <li class="project__stack-item">Reinforcement Learning</li>
+              <li class="project__stack-item">PyBullet</li>
+              <li class="project__stack-item">Robotic Manipulation</li>
             </ul>
 
             <a
@@ -199,6 +196,8 @@ field of view, enabling reliable and responsive tracking without manual setup.
         <ul class="skills__list">
           <li class="skills__list-item btn btn--plain">Python</li>
           <li class="skills__list-item btn btn--plain">C++</li>
+          <li class="skills__list-item btn btn--plain">Kalman Filters</li>
+          <li class="skills__list-item btn btn--plain">SLAM</li>
           <li class="skills__list-item btn btn--plain">Machine Learning</li>
           <li class="skills__list-item btn btn--plain">Reinforcement Learning</li>
           <li class="skills__list-item btn btn--plain">Computer Vision</li>
